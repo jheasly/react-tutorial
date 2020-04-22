@@ -71,13 +71,25 @@ class Game extends React.Component {
       xIsNext: !this.state.xIsNext,
     });
   }
-  
+
   jumpTo(step) {
     this.setState({
       stepNumber: step,
       xIsNext: (step % 2) === 0,
     });
   }
+
+  const columnRow = [
+    '(0, 0)',
+    '(1, 0)',
+    '(2, 0)',
+    '(0, 1)',
+    '(1, 1)',
+    '(2, 1)',
+    '(0, 2)',
+    '(1, 2)',
+    '(2, 2)',
+  ]
 
   render() {
     const history = this.state.history;

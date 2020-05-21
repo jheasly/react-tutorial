@@ -89,7 +89,7 @@ class Game extends React.Component {
     '(0, 2)',
     '(1, 2)',
     '(2, 2)',
-  ]
+  ];
 
   render() {
     const history = this.state.history;
